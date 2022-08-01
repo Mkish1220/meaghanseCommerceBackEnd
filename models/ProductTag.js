@@ -10,31 +10,31 @@ ProductTag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     product_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     price: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
       validate: {
         isDecimal: true,
-        isnumeric: true
+        isnumeric: true,
       },
       stock: {
         type: DataTypes.INTEGER,
         allowNull: false,
         defaultValue: 10,
         validate: {
-          isInt: true
+          isInt: true,
         },
         category_id: {
           type: DataTypes.INTEGER,
           refrence: {
             model: 'categorory',
-            key: 'id'
+            key: 'id',
           }
         }
       }

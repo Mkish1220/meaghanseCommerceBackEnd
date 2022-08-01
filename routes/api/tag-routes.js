@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
-
+const sequelize = require('../config/connection');
 // The `/api/tags` endpoint
   // find all tags
   // be sure to include its associated Product data

@@ -34,7 +34,7 @@ Product.init(
         references: {
           model: 'categories',
           key: 'id',
-          unique: true
+          unique: true,
         }
       }
     },

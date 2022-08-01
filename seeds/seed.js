@@ -2,6 +2,7 @@ const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');
 const seedTags = require('./tag-seeds');
 const seedProductTags = require('./product-tag-seeds');
+const { Category, Product, Tag, ProductTag } = require('../models');
 
 const sequelize = require('../config/connection');
 
