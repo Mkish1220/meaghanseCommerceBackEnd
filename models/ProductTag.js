@@ -28,7 +28,7 @@ ProductTag.init(
         allowNull: false,
         defaultValue: 10,
         validate: {
-          isInt: true,
+          isnumeric: true,
         },
         category_id: {
           type: DataTypes.INTEGER,
