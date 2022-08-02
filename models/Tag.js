@@ -15,22 +15,9 @@ Tag.init(
   },
   tag_name: {
     type: DataTypes.STRING
-  },
-  product_id: {
-    type: DataTypes.INTEGER,
-    refrence: {
-      model: 'product',
-      key: 'id'
-    },
-    tag_id: {
-      type: DataTypes.INTEGER,
-      refrence: {
-        model: 'tag',
-        key: 'id'
-      }
-    }
   }
 },
+
    {
     sequelize,
     timestamps: false,
